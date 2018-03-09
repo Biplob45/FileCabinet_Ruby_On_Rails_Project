@@ -1,0 +1,27 @@
+Launch FileCabinet & create static landing page
+Section 9, Lecture 22
+
+=>rails new cabinet
+=>cd cabinet
+=>rails server
+=>http://localhost:3000/
+=>git init
+=>git status
+=>git add .
+=>git commit -m "Initial Commit"
+=>rails generate controller welcome index
+[create an controller which name is welcome and also create a index.html.erb file in the View]
+=>rake routes
+=>git status
+=>git add .
+=>git commit -m "Generate welcome controller"
+
+
+
+FileCabinet_Ruby_On_Rails_Project
+
+
+
+
+
+    
