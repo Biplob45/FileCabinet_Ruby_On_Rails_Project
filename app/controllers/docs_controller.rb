@@ -1,9 +1,13 @@
 class DocsController < ApplicationController
+  before_action :find_doc, only: [:show, :edit, :update, :destroy]
+  #[We only wanted for show,edit,update,destroy]
 
   def index
+    @docs = Doc.all.order("created_at DESC")
   end
 
   def show
+
   end
 
   def new
@@ -21,17 +25,22 @@ class DocsController < ApplicationController
   end
 
   def edit
+
   end
 
   def update
+
   end
 
   def destroy
+
   end
 
   private
 
     def find_doc
+      @doc = Doc.find(params[:id])
+      #if we added in private we must write in top of the code.
     end
 
     def doc_params
