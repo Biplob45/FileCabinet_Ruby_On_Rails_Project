@@ -30,9 +30,9 @@ gem 'jbuilder', '~> 2.5'
 gem 'devise', '~> 4.4', '>= 4.4.1'       #Added 3 gemfile in "Gemfile" Directory
 gem 'simple_form', '~> 3.5', '>= 3.5.1'  #Added 3 gemfile in "Gemfile" Directory
 gem 'haml', '~> 5.0', '>= 5.0.4'         #Added 3 gemfile in "Gemfile" Directory
-
-
-
+#For Windows it works with CofferScript v1.8
+gem 'coffee-script-source', '1.8.0'      #added this
+#CoffeeScript is a little language that compiles into JavaScript
 
 
 # Use Redis adapter to run Action Cable in production

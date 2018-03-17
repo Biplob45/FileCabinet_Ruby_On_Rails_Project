@@ -2,3 +2,5 @@
   %h2= link_to doc.title, doc  #create link
   %p= time_ago_in_words(doc.created_at)   #showing when the doc created
   %p= truncate(doc.content, length:50)   #showing first 50 character.
+
+  = link_to "Create Doc", new_doc_path

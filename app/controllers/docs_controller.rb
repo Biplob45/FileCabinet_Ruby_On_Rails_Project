@@ -29,18 +29,22 @@ class DocsController < ApplicationController
   end
 
   def update
-
+    if @doc.update(doc_params)
+      redirect_to @doc #New HTTP request
+    else
+      render 'edit'
+    end
   end
 
   def destroy
-
+    @doc.destroy
+    redirect_to docs_path
   end
 
   private
 
     def find_doc
-      @doc = Doc.find(params[:id])
-      #if we added in private we must write in top of the code.
+      @doc = Doc.find(params[:id])  #if we added in private we must write in top of the code.
     end
 
     def doc_params
